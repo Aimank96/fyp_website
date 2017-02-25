@@ -12,9 +12,13 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
     if($Username == '' || $Password == '' || $Email == '' || $PhoneNumber == ''){
         echo 'Please fill all values';
     } else {
-        $sql="insert into Users(Username,Password,Email,PhoneNumber,AccBalance) Values('$Username','$Password','$Email','$PhoneNumber','$AccBalance') ";
-        echo 'Succesfully Register';
-        
+  
+           if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                                 echo'Invalid email format'; 
+                              } else {
+                                     $sql="insert into Users(Username,Password,Email,PhoneNumber,AccBalance) Values('$Username','$Password','$Email','$PhoneNumber','$AccBalance') ";
+                                    echo 'Succesfully Register';
+                              }
     }
     
     
