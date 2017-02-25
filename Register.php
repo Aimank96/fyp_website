@@ -10,5 +10,5 @@ $Password = $_POST['Password'];
 $sql="insert into Users(Username,Password) Values('$Username','$Password') ";
 
 mysqli_query($con,$sql);
-
+echo 'masuk kew eb';
 ?>
