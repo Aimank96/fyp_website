@@ -10,13 +10,9 @@
 <body>
 <?php 
 
-include ("DBCONFIG.php");
+include 'DBCONFIG.php';
 
-
-$sql = "INSERT INTO `ameerulariff`.`Test` (`id`, `remark`) VALUES ('3','aiman');";
-
-mysqli_query($con, $sql)
-
+$sql = "INSERT INTO `ameerulariff`.`aimantinoq` (`ic`, `email`) VALUES ('2','yoo');";
 ?>
     <h1>Hello Arif</h1>
 </body>
