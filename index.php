@@ -13,6 +13,10 @@
 include ("DBCONFIG.php");
 
 
+$sql = "INSERT INTO `ameerulariff`.`Test` (`id`, `remark`) VALUES ('3','aiman');";
+
+mysqli_query($con, $sql)
+
 ?>
     <h1>Hello Arif</h1>
 </body>
