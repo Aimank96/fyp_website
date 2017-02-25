@@ -8,7 +8,12 @@
 
 </head>
 <body>
+<?php 
 
+include ("DBCONFIG.php");
+
+
+?>
     <h1>Hello Arif</h1>
 </body>
 </html>
