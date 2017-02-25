@@ -11,5 +11,5 @@ $sql="insert into Users(Username,Password) Values('$Username','$Password') ";
 
 mysqli_query($con,$sql);
 
-echo 'test';
+echo "username is $Username password is '$Password'" ;
 ?>
