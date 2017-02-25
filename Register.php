@@ -15,7 +15,8 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
         echo 'Please fill all values';
     } else {
   
-           if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+           if (!filter_var($Email, FILTER_VALIDATE_EMAIL)) {
+               
                                  echo'Invalid email format'; 
                               } else {
                               $sql = "SELECT * FROM Users WHERE Username='$Username' OR Email='$email' OR PhoneNumber=$PhoneNumber";                                    
