@@ -1,11 +1,11 @@
 <?php
 include 'DBCONFIG.php';
 
-$Username = $_POST['Username'];
-$Password = $_POST['Password'];
+//$Username = $_POST['Username'];
+//$Password = $_POST['Password'];
 
-
-
+$Username ='ssss';
+$Password='sssa';
 
 $sql="insert into Users(Username,Password) Values('$Username','$Password') ";
 
