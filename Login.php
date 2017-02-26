@@ -6,7 +6,7 @@ include 'DBCONFIG.php';
     $Username=$_POST["username"];
     $Password=$_POST["password"];
 
-      $sql="SELECT * FROM Users"; //WHERE Username='$Username' AND Password='$Password'";
+      $sql="SELECT * FROM Users WHERE Username='$Username' AND Password='$Password'";
       
       $result=mysqli_query($con, $sql);
     
