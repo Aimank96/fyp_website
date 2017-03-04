@@ -14,7 +14,7 @@ while($row = mysqli_fetch_array($res)){
 array_push($result,
 array('ID'=>$row[0],
 'Username'=>$row[1],
-'AccBalance'=>$row[2],
+'AccBalance'=>$row[5],
  ));
 }
  
