@@ -4,7 +4,7 @@ include 'DBCONFIG.php';
 
 $ID=$_POST["ID"];
 
-$sql="select * from Users where ID ='1'";
+$sql="select * from Users where ID ='$ID'";
         
   $result = mysqli_query($con,$sql);
  
@@ -17,7 +17,7 @@ $sql="select * from Users where ID ='1'";
  }
  $balance=$balance-3;
  
- $sql="update Users set AccBalance ='$balance' Where ID='1'";
+ $sql="update Users set AccBalance ='$balance' Where ID='$ID'";
         mysqli_query($con, $sql);
         
         echo $balance;
