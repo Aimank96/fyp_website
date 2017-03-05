@@ -4,7 +4,7 @@ include 'DBCONFIG.php';
 
 $ID=$_POST["ID"];
 
-$sql="select * from Users where ID ='1' ";//'$ID'";
+$sql="select * from Users where ID ='$ID'";
         
   $result = mysqli_query($con,$sql);
  
