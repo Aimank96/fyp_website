@@ -1,7 +1,5 @@
-<a href="PHPMailer-master/PHPMailerAutoload.php"></a>
-
 <?php
-require 'PHPMailer-master/PHPMailerAutoload.php/PHPMailerAutoload.php';
+require 'PHPMailer-master/PHPMailerAutoload.php';
 
 $mail = new PHPMailer;
 
