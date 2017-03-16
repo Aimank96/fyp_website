@@ -3,9 +3,9 @@ include 'DBCONFIG.php';
 
 if($_SERVER['REQUEST_METHOD']=='POST'){
     
-    $CardNumber = $_POST['CardNumb'];
-    $Expiry = $_POST['Expiry'];
-    $CVV = $_POST['CVV'];
+   // $CardNumber = $_POST['CardNumb'];
+   // $Expiry = $_POST['Expiry'];
+   // $CVV = $_POST['CVV'];
     
 
     
