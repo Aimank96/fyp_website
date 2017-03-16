@@ -8,7 +8,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
     $CVV = $_POST['CVV'];
     
 $sql = "INSERT INTO carddebit (CardNumber, ExpiryCard, CVV)
-VALUES ('John', 'Doe', 'john@example.com')";
+VALUES ('$CardNumber', '$Expiry', '$CVV')";
 
 mysqli_query($con, $sql);
     //echo "Card Number $CardNumber";
