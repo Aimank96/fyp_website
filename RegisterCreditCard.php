@@ -8,7 +8,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
     $CVV = $_POST['CVV'];
     
 
-    echo $CardNumber;
+    echo "$CardNumber kkkk";
     
 }
 
