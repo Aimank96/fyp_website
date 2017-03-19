@@ -9,8 +9,8 @@ $result = array();
 while($row = mysqli_fetch_array($res)){
 array_push($result,
 array('ID'=>$row[0],
-'Coursecode'=>$row[1],
-'CourseName'=>$row[2],
+'CardNumber'=>$row[1],
+'Expiry'=>$row[2],
  ));
 }
  
