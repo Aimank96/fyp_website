@@ -7,8 +7,8 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
     $Expiry = $_POST['Expiry'];
     $CVV = $_POST['CVV'];
     
-$sql = "INSERT INTO carddebit (CardNumber, ExpiryCard, CVV)
-VALUES ('$CardNumber', '$Expiry', '$CVV')";
+$sql = "INSERT INTO carddebit (CardNumber, ExpiryCard, CVV,UserID)
+VALUES ('$CardNumber', '$Expiry', '$CVV','1')";
 
 if(mysqli_query($con, $sql)){
     
