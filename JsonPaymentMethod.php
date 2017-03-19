@@ -1,5 +1,5 @@
 <?php
-
+include 'DBCONFIG.php';
 $sql = "select * from carddebit";// where username='$username'";//and password=$password";
  
 $res = mysqli_query($con,$sql);
