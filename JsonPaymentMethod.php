@@ -1,6 +1,7 @@
 <?php
 include 'DBCONFIG.php';
 
+$UserID = $_POST["UserID"];
 $sql = "select * from carddebit where UserID='1'";//and password=$password";
  
 $res = mysqli_query($con,$sql);
