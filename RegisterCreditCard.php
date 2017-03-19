@@ -10,7 +10,11 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 $sql = "INSERT INTO carddebit (CardNumber, ExpiryCard, CVV)
 VALUES ('$CardNumber', '$Expiry', '$CVV')";
 
-mysqli_query($con, $sql);
+if(mysqli_query($con, $sql)){
+    
+}else{
+    echo  mysqli_error($con);
+}
     //echo "Card Number $CardNumber";
     //echo "Expiry $Expiry";
     //echo "CVV $CVV";
