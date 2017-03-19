@@ -2,7 +2,7 @@
 include 'DBCONFIG.php';
 
 $UserID = $_POST["UserID"];
-$sql = "select * from carddebit where UserID='1'";//and password=$password";
+$sql = "select * from carddebit where UserID='$UserID'";//and password=$password";
  
 $res = mysqli_query($con,$sql);
  
