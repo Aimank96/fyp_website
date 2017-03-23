@@ -13,5 +13,4 @@
 ?>
     <h1>Hello Arif</h1>
 </body>
->>>>>>> origin/master
 </html>
