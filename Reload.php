@@ -25,7 +25,7 @@ if ($result->num_rows > 0) {
 }
 if($CreditInit!="Unassigned"){
     $CreditTotal=$Credit+$CreditInit;
-    echo $CreditTotal;
+   
 }
 else{
         echo "error";
