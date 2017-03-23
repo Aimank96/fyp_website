@@ -10,7 +10,7 @@ if ($con->connect_error) {
      die("Connection failed: " . $con->connect_error);
 } 
 
-$sql="Select * from Users where $Identity";
+$sql="Select * from Users where ID='$Identity'";
 $result = $con->query($sql);
 
 if ($result->num_rows > 0) {
