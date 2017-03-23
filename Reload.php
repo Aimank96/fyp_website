@@ -27,7 +27,7 @@ if ($result->num_rows > 0) {
     echo $CreditTotal;
 
 
-$sql="update Users set AccBalance ='$Credit' Where ID='$Identity'";
+$sql="update Users set AccBalance ='$CreditTotal' Where ID='$Identity'";
        if(mysqli_query($con, $sql)){
            echo 'Reload Succes';
        } else {
