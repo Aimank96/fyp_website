@@ -11,7 +11,7 @@ if ($con->connect_error) {
 } 
 
 $sql="Select * from Users";
-$result = $conn->query($sql);
+$result = $con->query($sql);
 
 if ($result->num_rows > 0) {
      // output data of each row
