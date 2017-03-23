@@ -33,5 +33,5 @@ $sql="update Users set AccBalance ='$Credit' Where ID='$Identity'";
        } else {
            echo mysqli_error($con);   
         }
- * 
- * */
+  
+ 
