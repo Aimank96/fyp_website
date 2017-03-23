@@ -4,7 +4,7 @@ include 'DBCONFIG.php';
 $Identity=$_POST["id"];
 $Credit=$_POST["credit"];
 
-$CreditInit;
+$CreditInit="Unassigned";
 $CreditTotal;
 
 if ($con->connect_error) {
@@ -23,13 +23,18 @@ if ($result->num_rows > 0) {
      echo "0 results";
      
 }
+if($CreditInit!="Unassigned"){
     $CreditTotal=$Credit+$CreditInit;
     echo $CreditTotal;
-
+}
+else{
+        echo "error";
+}
+        
 
 $sql="update Users set AccBalance ='$CreditTotal' Where ID='$Identity'";
        if(mysqli_query($con, $sql)){
-           echo 'Reload Succes';
+           echo "Your new balance is $CreditTotal";
        } else {
            echo mysqli_error($con);   
         }
