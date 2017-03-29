@@ -37,9 +37,9 @@
 		<div id="menu">
 			<ul>
 				<li class="current_page_item"><a href="http://127.0.0.1/web/Home.html" accesskey="1" title="">Homepage</a></li>
-				<li><a href="http://127.0.0.1/web/AboutUs.html" accesskey="2" title="">About Us</a></li>
-				<li><a href="http://127.0.0.1/web/Gallery.html" accesskey="3" title="">Gallery</a></li>
-				<li><a href="http://127.0.0.1/web/login.html" accesskey="4" title="">Admin</a></li>
+				<li><a href="http://127.0.0.1/web/AboutUs.html" accesskey="2" title="">Admin</a></li>
+				
+				
 				
 			</ul>
 		</div>
