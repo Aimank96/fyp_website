@@ -40,7 +40,7 @@
 				<li><a href="http://127.0.0.1/web/AboutUs.html" accesskey="2" title="">About Us</a></li>
 				<li><a href="http://127.0.0.1/web/Gallery.html" accesskey="3" title="">Gallery</a></li>
 				<li><a href="http://127.0.0.1/web/login.html" accesskey="4" title="">Admin</a></li>
-				<<li><a href="http://127.0.0.1/web/Registration.html" accesskey="5" title="">Loan Registration</a></li>
+				
 			</ul>
 		</div>
 	</div>
