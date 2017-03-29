@@ -465,6 +465,7 @@
 	
 	#menu li:hover a, #menu li.active a, #menu li.active span
 	{
+            background: #9999ff;
 	}
 	
 	#menu .current_page_item a
