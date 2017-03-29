@@ -34,7 +34,7 @@
 	list-style: none;
 	text-align: left;
 	}
-	
+	/**
 	p
 	{
 	line-height: normal;
@@ -43,7 +43,7 @@
 	color: #000000;
 	font-weight: bold;
 	}
-	
+	**/
 	strong
 	{
 	}
