@@ -44,10 +44,10 @@
 
 <body>
 
-<form action="autoLogin.php" method="post">
+<form action="login.php" method="post">
 <table align="center">
 	<tr>
-	<td>Username</td>
+	<td>Usernamee</td>
 	<td>:</td>
 	<td><input name="myusername" type="text"/></td>
 	</tr>
@@ -69,26 +69,9 @@
 <div align="center"></div>
 	
 				
-				
-			<ul class="actions">
-				<li><a href="#" class="button">Etiam posuere</a></li>
-			</ul>
+			
 		</div>
 	</div>
 </div>
 </body>
 </html>
-		      
-
-
-
-			</div>
-			<ul class="actions">
-				<li><a href="#" class="button">Etiam posuere</a></li>
-			</ul>
-		</div>
-	</div>
-</div>
-</body>
-</html>
-
