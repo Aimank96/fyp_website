@@ -5,16 +5,8 @@ include '../DBCONFIG.php';
 
 session_start();
 
-$userName=$_POST["myusername"];
-$password=$_POST["mypassword"];
-
-
-
-  $sql="SELECT * FROM Admin WHERE Username='$userName' AND Password='$password'";
-     $result=mysqli_query($con, $sql);
-
-if ($result->num_rows > 0) {
-    $_SESSION["Username"] = "$userName";
+if ($_SESSION) {
+  
    
   
 ?>

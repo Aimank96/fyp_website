@@ -12,7 +12,7 @@ if($con = mysqli_connect($dbhost,$dbuser,$dbpwd,"ameerulariff",$dbport)){
 } else{
     $dbhost ='localhost';
 $dbuser ='root';
-$dbpwd = '';
+$dbpwd = 'root';
 if($con = mysqli_connect($dbhost,$dbuser,$dbpwd,"ameerulariff",$dbport)){
     echo 'berjaya';
 }
