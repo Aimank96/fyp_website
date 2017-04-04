@@ -45,7 +45,7 @@ if($_SESSION){
              
                 <form action="SearchResult.php" method="post">
 	<p align="center">
-            User ID: <input class="BlackColour" name="ID_User" type="text" size="30">
+            User ID: <input class="BlackColour" name="Search" type="text" size="30">
 	<input type="submit" name="Submit" value="Search"></p>
 
   </form>

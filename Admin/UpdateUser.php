@@ -2,15 +2,14 @@
 include '../DBCONFIG.php';
 session_start();
 if($_SESSION){
-         
-             $search=$_POST["Search"];
-    $sql="Select * from Users where ID like'%$search%' or Username like'%$search%'"
-    . " or Email like '%$search%' or PhoneNumber like '%$search%'";
+    $id=$_GET["ID"];
+       $search=$_POST["Search"];
+    $sql="Select * from Users where ID ='$id'";
       $result = mysqli_query($con, $sql);
+      
     $hasRecord = $result->num_rows > 0;
     $rows = !$hasRecord? [] : mysqli_fetch_all($result,MYSQLI_ASSOC);
     $headers = array_keys($rows[0]);
-            
 ?>
 <html>
 <head>
@@ -51,35 +50,47 @@ if($_SESSION){
     <div class="container"  >
         <div class="row text-center">
             <div  class="center-block" >
-                <table class="table table-hover TableBackground">
+             
+  <form method="post" action="Update.php">
+                            <table class="table table-hover TableBackground">
                                 <thead>
-                                    <tr>
-            <?php foreach($headers as $header): ?>
+                                   <tr>
+            <?php foreach($headers as $header): 
+                
+               if($header=="ID"){
+            continue;
+            } ?>
+                
+                
             <th><?php echo $header; ?></th>
             <?php endforeach; ?>
         </tr>
-
                                 </thead>
-                                <tbody>
-                                    <tr>
-                                       
-                                        <?php foreach($rows as $row): ?>
-                                 
+                               <tbody>
+        <?php foreach($rows as $row): ?>
         <tr>
             <?php foreach($headers as $header): ?>
-            <td><?php echo $row[$header]; ?></td>
-              <?php $primaryKey= $row["ID"] ?>
+            <?php if($header=="ID"){
+                $id=$row["ID"];
+            continue;
+            } ?>
+ <td> <input type="text" name="<?php echo $header; ?>" value="<?php echo $row[$header]; ?>"></td>
             <?php endforeach; ?>
-            <td><a href="UpdateUser.php?ID=<?php echo $primaryKey ?>">Edit</a></td>
-                 <td><?php echo "Delete" ?></td>
+     
         </tr>
+        
         <?php endforeach; ?>
-                                    </tr>
-                                     
-                                  
-                                </tbody>
+       <?php //echo "<h1>$id</h1>"
+               ?>
+    </tbody>
                             </table>
-                
+              
+        <input type="hidden" name="ID" value="<?php echo  $id?>"> 
+     <td><input type="submit"></td>
+    </form>
+
+
+</div>
             </div>
         </div>
     </div>

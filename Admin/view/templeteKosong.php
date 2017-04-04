@@ -1,3 +1,8 @@
+<?php
+include '../DBCONFIG.php';
+session_start();
+if($_SESSION){
+?>
 <html>
 <head>
     <link href="view/assets/css/bootstrap.css" rel="stylesheet" type="text/css"/>
@@ -40,17 +45,16 @@
              
 
 
-</body>
-</html>
-</form>
 
 </div>
             </div>
         </div>
     </div>
 
-		</div>
-	</div>
-</div>
 </body>
 </html>
+<?php 
+}
+else{
+    echo 'please login';
+}
