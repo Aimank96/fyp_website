@@ -35,9 +35,9 @@ if($_SESSION){
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="logins.php">HOME</a></li>
-                    <li><a href="Package.html">REGISTER NEW</a></li>
-                     <li><a href="Gallery.html">SEARCH</a></li>
-                    <li><a href="Contact.html">LOGOUT</a></li>
+                    <li><a href="Register.php.html">REGISTER NEW</a></li>
+                    <li><a href="Search.php">SEARCH</a></li>
+                    <li><a href="Logout.php">LOGOUT</a></li>
                 </ul>
             </div>
            
@@ -74,9 +74,9 @@ if($_SESSION){
                 $id=$row["ID"];
             continue;
             } ?>
- <td> <input type="text" name="<?php echo $header; ?>" value="<?php echo $row[$header]; ?>"></td>
-            <?php endforeach; ?>
-     
+ <td> <input type="text" name="<?php echo $header; ?>"
+             value="<?php echo $row[$header]; ?>"></td>
+            <?php endforeach; ?>     
         </tr>
         
         <?php endforeach; ?>

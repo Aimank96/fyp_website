@@ -17,7 +17,7 @@
 	<div id="header">
 		<div id="logo">
                     <img src="asset/Image/icon.jpeg" alt=""/>
-			<h1><a href="http://127.0.0.1/web/Home.html">Book Lover</a></h1>
+			<h1><a href="http://127.0.0.1/web/Home.html">E-Rapid KL</a></h1>
 			
 		</div>
 		<div id="menu">
@@ -39,7 +39,6 @@
 				
 <html>
 <head>
-<? ob_start(); ?>
 </head>
 
 <body>
@@ -47,7 +46,7 @@
 <form action="login.php" method="post">
 <table align="center">
 	<tr>
-	<td>Usernamee</td>
+	<td>Username</td>
 	<td>:</td>
 	<td><input name="myusername" type="text"/></td>
 	</tr>

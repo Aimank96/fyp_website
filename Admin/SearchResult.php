@@ -36,9 +36,9 @@ if($_SESSION){
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="logins.php">HOME</a></li>
-                    <li><a href="Package.html">REGISTER NEW</a></li>
-                     <li><a href="Gallery.html">SEARCH</a></li>
-                    <li><a href="Contact.html">LOGOUT</a></li>
+                    <li><a href="Register.php">REGISTER NEW</a></li>
+                    <li><a href="Search.php">SEARCH</a></li>
+                    <li><a href="Logout.php">LOGOUT</a></li>
                 </ul>
             </div>
            
@@ -71,7 +71,7 @@ if($_SESSION){
               <?php $primaryKey= $row["ID"] ?>
             <?php endforeach; ?>
             <td><a href="UpdateUser.php?ID=<?php echo $primaryKey ?>">Edit</a></td>
-                 <td><?php echo "Delete" ?></td>
+            <td><a href="Delete.php?ID=<?php echo $primaryKey ?>">Delete</a></td>
         </tr>
         <?php endforeach; ?>
                                     </tr>
