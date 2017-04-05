@@ -32,7 +32,7 @@
 		<div id="logo">
 			
                         <img src="asset/Image/icon.jpeg" alt=""/>
-			<h1><a E-Rapid KL</a></h1>
+			<h1><a>E-Rapid KL</a></h1>
 			
 		</div>
 		<div id="menu">
