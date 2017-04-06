@@ -1,3 +1,8 @@
+<script>
+function myFunction() {
+    alert("I am an alert box!");
+}
+</script>
 <?php
 
 include '../DBCONFIG.php';
@@ -111,7 +116,10 @@ if ($result->num_rows > 0) {
 </html>
 <?php
 } else {
-    echo "0 results";
+ 
+echo "<script type=\"text/javascript\">window.alert('Wrong username or password');
+window.location.href = 'admin.php';</script>"; 
+  // header('Location:admin.php');
 }
 
 ?>
