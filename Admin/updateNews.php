@@ -13,6 +13,8 @@ if($_SESSION){
 </head>
 
 <body>
+  
+
 
      <div class="container">
             <div class="navbar-header">
@@ -26,7 +28,7 @@ if($_SESSION){
         
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                <?php include 'headerss.php'; ?>
+                           <?php include 'headerss.php'; ?>
                 </ul>
             </div>
            
@@ -35,17 +37,19 @@ if($_SESSION){
     
  <div id="home-sec">
 
-   
+     
     <div class="container"  >
         <div class="row text-center">
             <div  class="center-block" >
              
-                <form action="SearchResult.php" method="post">
-	<p align="center">
-            User ID: <input class="BlackColour" name="Search" type="text" size="30">
-	<input type="submit" name="Submit" value="Search"></p>
 
-  </form>
+                <form action="updatedNews.php" method="post">
+      <h1> Current News:</h1> <h1> <?php include '../News.php'; ?></h1><br>
+      <h1>Update News: </h1><input class="BlackColour" type="text" name="UpdateNews"<br>
+
+<h3><input type="submit" value="Submit"></h3>
+
+</form>
 
 
 </div>
@@ -53,12 +57,10 @@ if($_SESSION){
         </div>
     </div>
 
-
-
 </body>
 </html>
-<?php
+<?php 
 }
- else {
-    echo 'Please login';
+else{
+    echo 'please login';
 }
