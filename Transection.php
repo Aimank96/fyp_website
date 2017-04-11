@@ -10,7 +10,7 @@ if(mysqli_query($con, $sql)){
         echo  $row[0];
     }
 } else {
-    echo "0 results";
+    echo mysqli_error($con);
 }
 
     
