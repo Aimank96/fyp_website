@@ -2,7 +2,13 @@
 include 'DBCONFIG.php';
 
 $sql = "INSERT INTO TransectionHistory(Boading_Station,Ending_station,Price,UserID,BoardingTIme,EndingTime) VALUES ('tesr','er','18','2',now(),now)";
-mysqli_query($con, $sql);
+if(mysqli_query($con, $sql)){
+    echo 'lalalala';
+    
+} else {
+    mysqli_error($con);    
+}
+
 
 /* 
  * To change this license header, choose License Headers in Project Properties.
