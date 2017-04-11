@@ -1,12 +1,12 @@
 <?php
 include 'DBCONFIG.php';
 
-$sql = "INSERT INTO TransectionHistory(Boading_Station,Ending_station,Price,UserID,BoardingTIme,EndingTime) VALUES ('tesr','er','18','2',now(),now)";
+$sql = "INSERT INTO TransectionHistory(Boading_Station,Ending_station,Price,UserID,BoardingTIme,EndingTime) VALUES ('tesr','er','18','2',now(),now())";
 if(mysqli_query($con, $sql)){
     echo 'lalalala';
     
 } else {
-    mysqli_error($con);    
+    echo  mysqli_error($con);    
 }
 
 
