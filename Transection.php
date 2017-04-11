@@ -8,18 +8,13 @@ $sql = "INSERT INTO TransectionHistory(Boading_Station,Ending_station,Price,User
 mysqli_query($con, $sql);
 
 $sql = "Select id from TransectionHistory where UserID=1 ORDER BY id DESC limit 1";
-
-var_dump(mysqli_query($con, $sql));
-        
-
+    
+ while($row = mysqli_query($con, $sql)->fetch_assoc()) {
+       echo $row["id"];
+    }
    
 
 
 
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
