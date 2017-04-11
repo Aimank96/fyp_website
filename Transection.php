@@ -9,7 +9,7 @@ mysqli_query($con, $sql);
 
 $sql = "Select id from TransectionHistory where UserID=1 ORDER BY id DESC limit 1";
 
-echo mysqli_query($con, $sql)->first();
+var_dump(mysqli_query($con, $sql));
         
 
    
