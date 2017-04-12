@@ -13,10 +13,10 @@ if (mysqli_num_rows($result) > 0) {
     }
 }
  
- $EndingStation=$_POST["EndingStation"];
- $Price=$_POST["Price"];
-
-
+// $EndingStation=$_POST["EndingStation"];
+// $Price=$_POST["Price"];
+$EndingStation="test";
+$Price="3";
 
 $sql="UPDATE Users SET `EndingStation`='$EndingStation', `Price`='$Price','EndingTime'='now()'";
 
@@ -26,4 +26,6 @@ $result= mysqli_query($con, $sql);
 if($result){///
                 
     echo 'sucess';         
+} else {
+    echo mysqli_error($con);    
 }
