@@ -2,12 +2,11 @@
 include 'DBCONFIG.php';
 
 $BoardingStation=$_POST["Boarding_Station"];
-$endingStation=$_POST["Ending_station"];
 $UserID=$_POST["User_id"];
 
 
 $sql = "INSERT INTO TransectionHistory(Boading_Station,UserID,BoardingTIme) 
- VALUES ('tesr','2',now())";
+ VALUES ('$BoardingStation','$UserID',now())";
 
 mysqli_query($con, $sql);
 /*
