@@ -7,7 +7,7 @@ $UserID=$_POST["User_id"];
 
 
 $sql = "INSERT INTO TransectionHistory(Boading_Station,UserID,BoardingTIme) 
- VALUES ('tesr','3',now())";
+ VALUES ('tesr','2',now())";
 
 mysqli_query($con, $sql);
 /*

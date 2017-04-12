@@ -15,10 +15,11 @@ if (mysqli_num_rows($result) > 0) {
  
 // $EndingStation=$_POST["EndingStation"];
 // $Price=$_POST["Price"];
-$EndingStation="test";
+$EndingStation="kambing";
 $Price="3";
 
-$sql="UPDATE TransectionHistory SET `Ending_station`='$EndingStation', `Price`='$Price',`EndingTime`='now()'";
+$sql="UPDATE TransectionHistory SET `Ending_station`='$EndingStation', `Price`='$Price',`EndingTime`=now()"
+        . "Where id=$id";
 
        
 $result= mysqli_query($con, $sql);
