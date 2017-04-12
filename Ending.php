@@ -1,7 +1,9 @@
 <?php
 include 'DBCONFIG.php';
-
-$sql = "Select id from TransectionHistory where UserID= 1 ORDER BY id DESC limit 1";
+$UserID=$_POST["User_id"];
+ $EndingStation=$_POST["EndingStation"];
+ $Price=$_POST["Price"];
+$sql = "Select id from TransectionHistory where UserID= '$UserID' ORDER BY id DESC limit 1";
     
 $id=null;
 $result = mysqli_query($con, $sql);
@@ -13,8 +15,7 @@ if (mysqli_num_rows($result) > 0) {
     }
 }
  
- $EndingStation=$_POST["EndingStation"];
- $Price=$_POST["Price"];
+
 //$EndingStation="kambing";
 //$Price="3";
 
