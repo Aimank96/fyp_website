@@ -1,4 +1,5 @@
 <?php
+include 'DBCONFIG.php';
 
 $sql = "Select id from TransectionHistory where UserID= 1 ORDER BY id DESC limit 1";
     
