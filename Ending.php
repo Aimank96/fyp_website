@@ -18,7 +18,7 @@ if (mysqli_num_rows($result) > 0) {
 $EndingStation="test";
 $Price="3";
 
-$sql="UPDATE Users SET `EndingStation`='$EndingStation', `Price`='$Price','EndingTime'='now()'";
+$sql="UPDATE Users SET `EndingStation`='$EndingStation', `Price`='$Price',`EndingTime`='now()'";
 
        
 $result= mysqli_query($con, $sql);
