@@ -10,7 +10,7 @@ $result= mysqli_query($con, $sql);
  while ($row = $result->fetch_assoc()) {
 
 
-                  
+                  unset($id, $name);
                   $id = $row['ID'];
                   $name = $row['StationName']; 
                   echo '<option value="'.$id.'">'.$name.'</option>';
@@ -18,12 +18,14 @@ $result= mysqli_query($con, $sql);
 }
 
     echo "</select>";
-    
+    $result= mysqli_query($con, $sql);
      echo "<select name='Ending'>";
  while ($row = $result->fetch_assoc()) {
 
 
-               
+                  unset($id, $name);
+                  $id = $row['ID'];
+                  $name = $row['StationName']; 
                   echo '<option value="'.$id.'">'.$name.'</option>';
                  
 }
