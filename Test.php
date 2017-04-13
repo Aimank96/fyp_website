@@ -6,9 +6,8 @@ $sql="select * from Station";?>
 $result= mysqli_query($con, $sql);
 while($row=mysql_fetch_array($result)){
 ?>  
-<option value=<?php echo $row['ID']; ?>><?php $row['StationName']; ?></option>
+        <option value=<?php echo $row['ID']; ?>><?php echo $row['StationName']; ?></option>
 <?php
   }
 ?>
     </select>
-\
