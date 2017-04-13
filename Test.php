@@ -2,9 +2,10 @@
 include 'DBCONFIG.php';
 $sql="select * from Station";
 $result= mysqli_query($con, $sql);
+    echo "<select name='test'>";
  while ($row = $result->fetch_assoc()) {
 
-    echo "<select name='test'>";
+
                   unset($id, $name);
                   $id = $row['ID'];
                   $name = $row['StationName']; 
