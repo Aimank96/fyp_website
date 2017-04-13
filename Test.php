@@ -4,6 +4,7 @@ $sql="select * from Station";?>
     <select name="station">
     <?php
 $result= mysqli_query($con, $sql);
+var_dump($result);
 while($row=mysql_fetch_array($result)){
 ?>  
         <option value=<?php echo $row['ID']; ?>><?php echo $row['StationName']; ?></option>
