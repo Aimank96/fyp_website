@@ -1,14 +1,17 @@
 <?php
 include 'DBCONFIG.php';
-$sql="select * from Station";?>
-    <select name="station">
-    <?php
+$sql="select * from Station";
 $result= mysqli_query($con, $sql);
-var_dump($result);
-while($row=mysql_fetch_array($result)){
-?>  
-        <option value=<?php echo $row['ID']; ?>><?php echo $row['StationName']; ?></option>
-<?php
-  }
+ while ($row = $result->fetch_assoc()) {
+
+    echo "<select name='test'>";
+                  unset($id, $name);
+                  $id = $row['ID'];
+                  $name = $row['StationName']; 
+                  echo '<option value="'.$id.'">'.$name.'</option>';
+                 
+}
+
+    echo "</select>";
+
 ?>
-    </select>
