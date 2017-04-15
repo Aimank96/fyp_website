@@ -29,6 +29,9 @@ if (mysqli_num_rows($result) > 0) {
 
     }
 }
+else{
+    echo mysqli_error($con);
+}
 echo "Boarding index is $BoardingIndex and the ending is $EndingIndex";
 //$EndingStation="kambing";
 //$Price="3";
