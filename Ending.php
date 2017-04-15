@@ -35,7 +35,7 @@ else{
 //echo "Boarding index is $BoardingIndex and the ending is $EndingIndex";
 
 
-$Price= abs($EndingIndex-$BoardingIndex);
+$Price= abs($EndingIndex-$BoardingIndex)*0.5;
 
 $sql="UPDATE TransectionHistory SET `Ending_station`='$EndingStation', `Price`='$Price',`EndingTime`=now()"
         . "Where id=$id";
