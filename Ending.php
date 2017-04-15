@@ -20,7 +20,7 @@ if (mysqli_num_rows($result) > 0) {
 }
 
 //process dapatkan id boarding
- $sql = "Select * from  Station where StationName=$BoardingStation";
+ $sql = "Select * from  Station where StationName='$BoardingStation'";
  $result = mysqli_query($con, $sql);
 if (mysqli_num_rows($result) > 0) {
     // output data of each row
