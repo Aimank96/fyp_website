@@ -44,7 +44,7 @@ $sql="UPDATE TransectionHistory SET `Ending_station`='$EndingStation', `Price`='
 $result= mysqli_query($con, $sql);
 
 if($result){///
-                 echo 'sucess';         
+                 echo "$Price";         
 } else {
     echo mysqli_error($con);    
 }
