@@ -32,11 +32,10 @@ if (mysqli_num_rows($result) > 0) {
 else{
     echo mysqli_error($con);
 }
-echo "Boarding index is $BoardingIndex and the ending is $EndingIndex";
-//$EndingStation="kambing";
-//$Price="3";
-/*
+//echo "Boarding index is $BoardingIndex and the ending is $EndingIndex";
 
+
+$Price= abs($EndingIndex-$BoardingIndex);
 
 $sql="UPDATE TransectionHistory SET `Ending_station`='$EndingStation', `Price`='$Price',`EndingTime`=now()"
         . "Where id=$id";
@@ -50,6 +49,6 @@ if($result){///
     echo mysqli_error($con);    
 }
                
-*/
+
 
     //nak dapatkan id boarding ngan ending, ending dapatkan index dari android
