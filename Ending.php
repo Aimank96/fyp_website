@@ -48,7 +48,20 @@ if($result){///
 } else {
     echo mysqli_error($con);    
 }
-               
+//nak dapatkan id boarding ngan ending, ending dapatkan index dari android
+$AccBalance;
+/////// tolak creadit customer
+ $sql = "Select * from  Users where ID='$UserID'";
+  $result = mysqli_query($con, $sql);
+if (mysqli_num_rows($result) > 0) {
+    // output data of each row
+    while($row = mysqli_fetch_assoc($result)) {
+       $AccBalance=$row["AccBalance"];
 
+    }
+}
+$newBalance=$AccBalance-$Price;
+//code untuk update
+$sql="UPDATE Users SET `AccBalance`='$newBalance' WHERE `ID`='$UserID'";
+$result= mysqli_query($con, $sql);
 
-    //nak dapatkan id boarding ngan ending, ending dapatkan index dari android
