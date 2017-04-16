@@ -57,11 +57,13 @@ if (mysqli_num_rows($result) > 0) {
     // output data of each row
     while($row = mysqli_fetch_assoc($result)) {
        $AccBalance=$row["AccBalance"];
-
     }
 }
 $newBalance=$AccBalance-$Price;
 //code untuk update
-$sql="UPDATE Users SET `AccBalance`='$newBalance' WHERE `ID`='$UserID'";
+if($newBalance<0){
+    echo 'Insufficient Credit';
+} else {
+    $sql="UPDATE Users SET `AccBalance`='$newBalance' WHERE `ID`='$UserID'";
 $result= mysqli_query($con, $sql);
-
+}
