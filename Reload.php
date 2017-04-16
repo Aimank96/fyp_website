@@ -44,3 +44,4 @@ $sql="update Users set AccBalance ='$CreditTotal' Where ID='$Identity'";
   
  $sql="INSERT INTO `ameerulariff`.`Topup_History` (`Amount`, `Card_Number`, `Time`) "
          . "VALUES ('$Credit', '$CardNumber', CURRENT_TIMESTAMP)";
+ mysqli_query($con, $sql);
