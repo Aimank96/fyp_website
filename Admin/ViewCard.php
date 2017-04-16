@@ -3,7 +3,7 @@ include '../DBCONFIG.php';
 session_start();
 if($_SESSION){
 $ID=$_GET["ID"];
-    $sql="Select * from carddebit";
+    $sql="Select * from carddebit where UserID=$ID";
       $result = mysqli_query($con, $sql);
     $hasRecord = $result->num_rows > 0;
     $rows = !$hasRecord? [] : mysqli_fetch_all($result,MYSQLI_ASSOC);
@@ -68,7 +68,7 @@ $ID=$_GET["ID"];
             <td><?php echo $row[$header]; ?></td>
               <?php $primaryKey= $row["ID"] ?>
             <?php endforeach; ?>
-         
+             <td><a href="UpdateUser.php?ID=<?php echo $primaryKey ?>">View Topup History</a></td>
         </tr>
         <?php endforeach; ?>
                                     </tr>
