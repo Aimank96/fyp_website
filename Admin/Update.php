@@ -42,6 +42,7 @@ if($_SESSION){
     <div class="container"  >
         <div class="row text-center">
             <div  class="center-block" >
+                <h1> Information Updated ! </h1>
              <?php
  $Username=$_POST["Username"];
  $Password=$_POST["Password"];
