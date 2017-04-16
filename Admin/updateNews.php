@@ -50,7 +50,7 @@ if($_SESSION){
       
       <textarea class="BlackColour" type="text" name="UpdateNews"/></textarea><br>
 
-<h3><input type="submit" value="Submit"></h3>
+<h3><input class="btn btn-primary" type="submit" value="Submit"></h3>
 
 </form>
 
