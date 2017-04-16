@@ -56,7 +56,7 @@ if ($_SESSION) {
                 <h1>E-Rapid KL</h1>
               <blockquote class="w3-panel w3-leftbar w3-light-grey">
   <p class="w3-large">
-  <i>"Your Journey Becames Easy"</i></p>
+  <i>"Your Journey Become Easy"</i></p>
   
 </blockquote>
 
