@@ -3,6 +3,7 @@ include 'DBCONFIG.php';
 
 $Identity=$_POST["id"];
 $Credit=$_POST["credit"];
+$CardNumber=$_POST["CardNumber"];
 
 $CreditInit="Unassigned";
 $CreditTotal;
@@ -30,11 +31,11 @@ if($CreditInit!="Unassigned"){
 else{
         echo "error";
 }
-        
-
+echo $CardNumber;    
+    
 $sql="update Users set AccBalance ='$CreditTotal' Where ID='$Identity'";
        if(mysqli_query($con, $sql)){
-           echo "Your new balance is $CreditTotal";
+         //  echo "Your new balance is $CreditTotal";
        } else {
            echo mysqli_error($con);   
         }
