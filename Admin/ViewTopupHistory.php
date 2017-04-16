@@ -57,7 +57,7 @@ if($_SESSION){
                                 <tbody>
                                     <?php
                                        if(!$hasRecord){
-                                            echo 'no Record';
+                                            echo 'No Record';
     }
                                     ?>
                                     <tr>
