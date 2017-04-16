@@ -66,7 +66,7 @@ $ID=$_GET["ID"];
         <tr>
             <?php foreach($headers as $header): ?>
             <td><?php echo $row[$header]; ?></td>
-              <?php $CardNumber= $row["ID"] ?>
+              <?php $CardNumber= $row["CardNumber"] ?>
             <?php endforeach; ?>
             <td><a href="ViewTopupHistory.php?CardNumber=<?php echo $CardNumber ?>">View Topup History</a></td>
         </tr>
