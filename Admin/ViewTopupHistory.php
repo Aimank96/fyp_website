@@ -55,6 +55,11 @@ if($_SESSION){
 
                                 </thead>
                                 <tbody>
+                                    <?php
+                                       if(!$hasRecord){
+                                            echo 'no Record';
+    }
+                                    ?>
                                     <tr>
                                        
                                         <?php foreach($rows as $row): ?>
