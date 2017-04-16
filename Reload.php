@@ -31,13 +31,16 @@ if($CreditInit!="Unassigned"){
 else{
         echo "error";
 }
-echo $CardNumber;    
+
     
 $sql="update Users set AccBalance ='$CreditTotal' Where ID='$Identity'";
        if(mysqli_query($con, $sql)){
-         //  echo "Your new balance is $CreditTotal";
+          echo "Your new balance is $CreditTotal";
        } else {
            echo mysqli_error($con);   
-        }
-  
+ }
  
+
+  
+ $sql="INSERT INTO `ameerulariff`.`Topup_History` (`Amount`, `Card_Number`, `Time`) "
+         . "VALUES ('$Credit', '$CardNumber', CURRENT_TIMESTAMP)";
