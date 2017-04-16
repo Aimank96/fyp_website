@@ -71,7 +71,7 @@ if($_SESSION){
                                   
                                 </tbody>
                             </table>
- <a class="btn btn-primary" href="addStation.php">Add Station</a>
+
 
 
 </div>
