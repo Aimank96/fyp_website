@@ -1469,7 +1469,7 @@ th {
 }
 .table-hover > tbody > tr:hover > td,
 .table-hover > tbody > tr:hover > th {
-  background-color: blue;
+    background-color: #00fbf8;
 }
 table col[class*="col-"] {
   position: static;
