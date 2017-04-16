@@ -5,10 +5,7 @@ $BoardingStation=$_POST["Boarding_Station"];
 $UserID=$_POST["User_id"];
 
 
-$sql = "INSERT INTO TransectionHistory(Boading_Station,UserID,BoardingTIme) 
- VALUES ('$BoardingStation','$UserID',now())";
 
-mysqli_query($con, $sql);
 
 $sql="Select * from Users where ID='$UserID'";
 $result= mysqli_query($con, $sql);
@@ -23,6 +20,10 @@ if($AccBalance<=5){
     echo 'Insufficient Credit';
 } else {
     echo $AccBalance;    
+    $sql = "INSERT INTO TransectionHistory(Boading_Station,UserID,BoardingTIme) 
+ VALUES ('$BoardingStation','$UserID',now())";
+
+mysqli_query($con, $sql);
 }
 
 
