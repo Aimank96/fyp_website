@@ -67,6 +67,7 @@ if($newBalance<0){
    $sql="UPDATE Users SET `AccBalance`='$newBalance' WHERE `ID`='$UserID'";
 $result= mysqli_query($con, $sql);    
 } else {
- 
+    $sql="UPDATE Users SET `AccBalance`='$newBalance' WHERE `ID`='$UserID'";
+$result= mysqli_query($con, $sql);
 echo "$Price";         
 }
