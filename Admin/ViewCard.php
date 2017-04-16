@@ -49,6 +49,36 @@ $ID=$_GET["ID"];
 
 
 
+<table class="table table-hover TableBackground">
+                                <thead>
+                                    <tr>
+            <?php foreach($headers as $header): ?>
+            <th><?php echo $header; ?></th>
+            <?php endforeach; ?>
+        </tr>
+
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                       
+                                        <?php foreach($rows as $row): ?>
+                                 
+        <tr>
+            <?php foreach($headers as $header): ?>
+            <td><?php echo $row[$header]; ?></td>
+              <?php $primaryKey= $row["ID"] ?>
+            <?php endforeach; ?>
+         
+        </tr>
+        <?php endforeach; ?>
+                                    </tr>
+                                    
+                                  
+                                </tbody>
+                            </table>
+
+
+
 </div>
             </div>
         </div>
