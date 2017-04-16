@@ -69,6 +69,6 @@ $result= mysqli_query($con, $sql);
 } else {
     $sql="UPDATE Users SET `AccBalance`='$newBalance' WHERE `ID`='$UserID'";
 $result= mysqli_query($con, $sql);
-echo 'The vault is open Your balance is RM';
+echo 'The vault is open, The price is RM';
 echo "$Price";         
 }
