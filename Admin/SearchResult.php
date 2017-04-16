@@ -67,8 +67,9 @@ if($_SESSION){
             <td><?php echo $row[$header]; ?></td>
               <?php $primaryKey= $row["ID"] ?>
             <?php endforeach; ?>
-            <td><a href="UpdateUser.php?ID=<?php echo $primaryKey ?>">Edit</a></td>
-            <td><a href="Delete.php?ID=<?php echo $primaryKey ?>">Delete</a></td>
+            <td><a class="btn btn-primary" href="UpdateUser.php?ID=<?php echo $primaryKey ?>">Edit</a></td>
+            <td><a class="btn btn-primary" href="Delete.php?ID=<?php echo $primaryKey ?>">Delete</a></td>
+               <td><a class="btn btn-primary" href="ViewCard.php?ID=<?php echo $primaryKey ?>">View Card</a></td>
         </tr>
         <?php endforeach; ?>
                                     </tr>
