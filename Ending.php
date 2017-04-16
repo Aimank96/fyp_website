@@ -62,7 +62,7 @@ if (mysqli_num_rows($result) > 0) {
 $newBalance=$AccBalance-$Price;
 //code untuk update
 if($newBalance<0){
-    echo 'Insufficient Credit';
+    echo 'Insufficient Credit the Vault is close';
     echo "$Price";         
 } else {
     $sql="UPDATE Users SET `AccBalance`='$newBalance' WHERE `ID`='$UserID'";
