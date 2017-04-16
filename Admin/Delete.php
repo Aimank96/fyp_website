@@ -6,3 +6,4 @@ include '../DBCONFIG.php';
  
  $sql="DELETE FROM Users WHERE `ID`='$id'";
  mysqli_query($con, $sql);
+ header('Location:logins.php');
