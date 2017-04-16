@@ -83,7 +83,7 @@ if($_SESSION){
                             </table>
               
         <input type="hidden" name="ID" value="<?php echo  $id?>"> 
-     <td><input type="submit"></td>
+     <td><input class="btn btn-primary type="submit"></td>
     </form>
 
 
