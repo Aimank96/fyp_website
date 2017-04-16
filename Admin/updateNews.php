@@ -45,7 +45,7 @@ if($_SESSION){
 
                 <form action="updatedNews.php" method="post">
       <h1> Current News:</h1> <h1> <?php include '../News.php'; ?></h1><br>
-      <input type="file"/>
+   
       <h1>Update News: </h1>
       
       <textarea class="BlackColour" type="text" name="UpdateNews"/></textarea><br>
