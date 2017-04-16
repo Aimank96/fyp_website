@@ -44,7 +44,7 @@ $sql="UPDATE TransectionHistory SET `Ending_station`='$EndingStation', `Price`='
 $result= mysqli_query($con, $sql);
 
 if($result){///
-                 echo "$Price";         
+                 
 } else {
     echo mysqli_error($con);    
 }
@@ -63,7 +63,9 @@ $newBalance=$AccBalance-$Price;
 //code untuk update
 if($newBalance<0){
     echo 'Insufficient Credit';
+    echo "$Price";         
 } else {
     $sql="UPDATE Users SET `AccBalance`='$newBalance' WHERE `ID`='$UserID'";
 $result= mysqli_query($con, $sql);
+echo "$Price";         
 }
