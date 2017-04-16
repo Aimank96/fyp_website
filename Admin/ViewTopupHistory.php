@@ -2,7 +2,8 @@
 include '../DBCONFIG.php';
 session_start();
 if($_SESSION){
-     $sql="Select * from Topup_History";
+    $CardNumber=$_GET["CardNumber"];
+     $sql="Select * from Topup_History where Card_Number='$CardNumber'";
       $result = mysqli_query($con, $sql);
     $hasRecord = $result->num_rows > 0;
     $rows = !$hasRecord? [] : mysqli_fetch_all($result,MYSQLI_ASSOC);
