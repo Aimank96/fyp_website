@@ -62,12 +62,13 @@ if (mysqli_num_rows($result) > 0) {
 $newBalance=$AccBalance-$Price;
 //code untuk update
 if($newBalance<0){
-    echo 'Insufficient Credit the Vault is close \n ';
+    echo 'Insufficient Credit the Vault is close ';
     echo " The price is $Price";     
    $sql="UPDATE Users SET `AccBalance`='$newBalance' WHERE `ID`='$UserID'";
 $result= mysqli_query($con, $sql);    
 } else {
     $sql="UPDATE Users SET `AccBalance`='$newBalance' WHERE `ID`='$UserID'";
 $result= mysqli_query($con, $sql);
+echo 'The vault is open Your balance is RM';
 echo "$Price";         
 }
