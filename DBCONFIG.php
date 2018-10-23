@@ -1,5 +1,6 @@
 <?php
 
+echo 'selamat datang';
 
 
 $dbhost = "u28rhuskh0x5paau.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
