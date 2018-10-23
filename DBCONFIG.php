@@ -7,8 +7,8 @@ $dbport = "3306"
 $dbuser = "d1kpjgk48gghlzyb";
 $dbpwd = "jle3dfmdzorbdmhm";
 
-if($con = mysqli_connect($dbhost,$dbuser,$dbpwd,"ameerulariff",$dbport)){
-    //  echo 'openshift berjaya';
+if($con = mysqli_connect($dbhost,$dbuser,$dbpwd,"nr138bteroktz8cg",$dbport)){
+     echo 'openshift berjaya';
 } else{
     $dbhost ='localhost';
 $dbuser ='root';
