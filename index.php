@@ -1,5 +1,9 @@
 <!doctype html>
 <html lang="en">
+<?php
+include 'DBCONFIG.php';
+
+?>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -8,10 +12,7 @@
 
 </head>
 <body>
-<?php
-include 'DBCONFIG.php';
 
-?>
     <h1>ApekKinsarfg</h1>
 </body>
 </html>
