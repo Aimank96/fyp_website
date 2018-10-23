@@ -8,7 +8,8 @@
 
 </head>
 <body>
-<?php 
+<?php
+include 'DBCONFIG.php';
 
 ?>
     <h1>ApekKinsarfg</h1>
