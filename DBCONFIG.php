@@ -27,3 +27,4 @@ if($con = mysqli_connect($dbhost,$dbuser,$dbpwd,"ameerulariff",$dbport)){
    echo 'gagal';
 }
 }
+?>
