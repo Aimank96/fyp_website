@@ -10,6 +10,8 @@ $username = $dbparts['user'];
 $password = $dbparts['pass'];
 $database = ltrim($dbparts['path'],'/');
 
+echo "$database";
+
 
 $con = new mysqli($hostname, $username, $password, $database);
 

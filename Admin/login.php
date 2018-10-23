@@ -18,7 +18,6 @@ $password=$_POST["mypassword"];
   $sql="SELECT * FROM Admin WHERE Username='$userName' AND Password='$password'";
      $result=mysqli_query($con, $sql);
 
-     echo "$sql";
 
 if ($result->num_rows > 0) {
     $_SESSION["Username"] = "$userName";
@@ -116,8 +115,8 @@ if ($result->num_rows > 0) {
 <?php
 } else {
 
-// echo "<script type=\"text/javascript\">window.alert('Wrong username or password');
-// window.location.href = 'admin.php';</script>";
+echo "<script type=\"text/javascript\">window.alert('Wrong username or password');
+window.location.href = 'admin.php';</script>";
   // header('Location:admin.php');
 }
 
