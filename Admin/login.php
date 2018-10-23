@@ -116,8 +116,8 @@ if ($result->num_rows > 0) {
 <?php
 } else {
 
-echo "<script type=\"text/javascript\">window.alert("$sql");
-window.location.href = 'admin.php';</script>";
+// echo "<script type=\"text/javascript\">window.alert('Wrong username or password');
+// window.location.href = 'admin.php';</script>";
   // header('Location:admin.php');
 }
 
