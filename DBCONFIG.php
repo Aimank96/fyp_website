@@ -1,6 +1,6 @@
 <?php
 
-echo 'selamat datang';
+// echo 'selamat datang';
 
 $url = getenv('JAWSDB_URL');
 $dbparts = parse_url($url);
@@ -9,9 +9,9 @@ $hostname = $dbparts['host'];
 $username = $dbparts['user'];
 $password = $dbparts['pass'];
 $database = ltrim($dbparts['path'],'/');
-echo "Connection was successfully established!";
+// echo "Connection was successfully established!";
 
-echo "$hostname \n $userName \n $password \n $database ";
+// echo "$hostname \n $userName \n $password \n $database ";
 
 
 $con = new mysqli($hostname, $username, $password, $database);

@@ -19,9 +19,7 @@ $password=$_POST["mypassword"];
      $result=mysqli_query($con, $sql);
 
 
-     if (!mysqli_query($con, $sql)) {
-         printf("Errormessage: %s\n", mysqli_error($con));
-     }
+  
 if ($result->num_rows > 0) {
     $_SESSION["Username"] = "$userName";
 
