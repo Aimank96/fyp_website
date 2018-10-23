@@ -16,15 +16,16 @@ $dbpwd = $dbparts['pass'];
 
 if($con = mysqli_connect($dbhost,$dbuser,$dbpwd,$database,$dbport)){
      echo 'openshift berjaya';
-} else{
-    $dbhost ='localhost';
-$dbuser ='root';
-$dbpwd = 'root';
-if($con = mysqli_connect($dbhost,$dbuser,$dbpwd,"ameerulariff",$dbport)){
-    echo 'berjaya';
 }
- else {
-   echo 'gagal';
-}
-}
+//  else{
+//     $dbhost ='localhost';
+// $dbuser ='root';
+// $dbpwd = 'root';
+// if($con = mysqli_connect($dbhost,$dbuser,$dbpwd,"ameerulariff",$dbport)){
+//     echo 'berjaya';
+// }
+//  else {
+//    echo 'gagal';
+// }
+// }
 ?>
