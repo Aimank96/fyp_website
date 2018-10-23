@@ -1,14 +1,20 @@
 <?php
 
 echo 'selamat datang';
+$url = getenv('JAWSDB_URL');
+$dbparts = parse_url($url);
 
+// $hostname = $dbparts['host'];
+// $username = $dbparts['user'];
+// $password = $dbparts['pass'];
+$database = ltrim($dbparts['path'],'/');
 
-$dbhost = "u28rhuskh0x5paau.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+$dbhost = $dbparts['host'];
 $dbport = "3306"
-$dbuser = "d1kpjgk48gghlzyb";
-$dbpwd = "jle3dfmdzorbdmhm";
+$dbuser = $dbparts['user'];
+$dbpwd = $dbparts['pass'];
 
-if($con = mysqli_connect($dbhost,$dbuser,$dbpwd,"nr138bteroktz8cg",$dbport)){
+if($con = mysqli_connect($dbhost,$dbuser,$dbpwd,$database,$dbport)){
      echo 'openshift berjaya';
 } else{
     $dbhost ='localhost';
