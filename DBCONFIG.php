@@ -9,8 +9,9 @@ $hostname = $dbparts['host'];
 $username = $dbparts['user'];
 $password = $dbparts['pass'];
 $database = ltrim($dbparts['path'],'/');
+echo "Connection was successfully established!";
 
-echo "$database";
+echo "$hostname \n $userName \n $password \n $database ";
 
 
 $con = new mysqli($hostname, $username, $password, $database);
@@ -19,7 +20,6 @@ $con = new mysqli($hostname, $username, $password, $database);
 if ($con->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-echo "Connection was successfully established!";
 // $dbparts = parse_url($url);
 //
 // // $hostname = $dbparts['host'];
